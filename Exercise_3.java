@@ -19,6 +19,7 @@ public class LinkedList {
         Node(int d) 
         { 
             //Write your code here 
+            data =d;
         } 
     }
   
@@ -27,6 +28,7 @@ public class LinkedList {
     { 
         // Create a new node with given data
         Node nw = new Node(data);
+        nw.next=null;
         Node head = list.head;
         Node tail = list.tail;
    
@@ -51,7 +53,7 @@ public class LinkedList {
         Node curr=list.head;
         
         // Traverse through the LinkedList 
-        (while curr!=null){
+        while (curr!=null){
             System.out.println(curr.data);
             curr=curr.next;
         }
