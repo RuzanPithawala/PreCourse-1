@@ -45,8 +45,6 @@ class Stack {
             System.out.println("Stack Underflow");
             return 0;
         }
-        return 0;
-    }
         return a[top];
     } 
 } 

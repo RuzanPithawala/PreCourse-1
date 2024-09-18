@@ -36,16 +36,21 @@ public class LinkedList {
         // then make the new node as head 
         if(head==null){
             head=nw;
-        }        
+            tail=nw;
+        }
             // Else traverse till the last node 
             // and insert the new_node there 
-            
-            // Insert the new_node at last node 
+        else {
             tail.next=nw;
+            tail=tail.next;
+        }    
+            // Insert the new_node at last node 
+            
         // Return the list by head
-        list.head = head; 
+        list.head = head;
+        list.tail = tail;
         return list;
-    } 
+    }  
   
     // Method to print the LinkedList. 
     public static void printList(LinkedList list) 
